@@ -10,18 +10,16 @@ const client = new Client({
 
 client.setMaxListeners(0);
 
-
 client.on('messageCreate', async(message) =>{
     if(message.content === '!ip'){
-        return message.reply({content: 'Hola, Como estas?'})
+        return message.reply({content: 'Hi, How are you doing?'})
     }
     
     console.log(message);
 });
 
-
 client.login(config.token).then(() => {
-    console.log(`${client.user.username} Esta Online.`); 
+    console.log(`${client.user.username} Is Online.`); 
 }).catch((err) =>{
     console.log(err)
 })
