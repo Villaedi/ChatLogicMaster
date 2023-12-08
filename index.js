@@ -10,6 +10,18 @@ const client = new Client({
 
 client.setMaxListeners(0);
 
+
+
+//pruebas 
+
+client.on('messageCreate', async(message) =>{
+    if(message.content === '!play'){
+        return message.reply({content: 'Musica'})
+    }
+    
+    console.log(message);
+});
+
 client.on('messageCreate', async(message) =>{
     if(message.content === '!ip'){
         return message.reply({content: 'Hi, How are you doing?'})
