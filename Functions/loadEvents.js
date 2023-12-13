@@ -20,7 +20,7 @@ async function loadEvents(client) {
                 else client.on(event.name, (...args) => event.execute(...args, client))    
             }
 
-            table.addRow(file, "Loaded....");
+            table.addRow(file, "Loaded");
             continue;
         }
     }
