@@ -7,3 +7,5 @@ install in the project
     - npm ascii-table
     - npp fs
     - npm ms
+    - npm install node-fetch
+    - npm i openai

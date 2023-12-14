@@ -19,7 +19,7 @@ async function loadCommands(client) {
 
             //agregamos datos para la Array = >  commandsArray
             commandsArray.push(commandFile.data.toJSON());
-            table.addRow(file, 'loaded...');
+            table.addRow(file, 'loaded');
             continue;
 
         }
