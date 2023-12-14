@@ -1,6 +1,5 @@
 const {client} = require('discord.js');
 const mongoose = require('mongoose');
-//const mongoose = require('mongodb');
 const config = require('../../config.json');
 require('colors')
 module.exports = {
