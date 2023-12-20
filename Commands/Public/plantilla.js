@@ -4,13 +4,13 @@ module.exports = {
     cooldown: ms('1m'),
     data: new SlashCommandBuilder()
     .setName('plantilla')
-    .setDescription('este comando es de prueba'),
+    .setDescription('This command is for testing.'),
     /**
      * 
      * @param {ChatInputCommandInteraction} interaction 
      * @param {client} client 
      */
     async execute(interaction, client){
-        return interaction.reply({content:`Hola ${interaction.user}`,ephemeral:true })
+        return interaction.reply({content:`Hi ${interaction.user}`,ephemeral:true })
     }
 };
